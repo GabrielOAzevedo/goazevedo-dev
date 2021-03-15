@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState } from "react";
 
 export default function MyHeader(props) {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -10,7 +10,7 @@ export default function MyHeader(props) {
     }
 
     return (
-        <header onClick={changeMenu} className="flex flex-row w-full md:justify-between items-center">
+        <header className="flex flex-row w-full md:justify-between items-center">
             <div className="md:hidden flex items-end mr-8" onClick={($event) => { setMenuOpen(true) }}>
                 <img src="/images/menu.svg"/>
             </div>
@@ -34,6 +34,15 @@ export default function MyHeader(props) {
                 <a className="text-purple-600" href="./blog">Blog</a>
                 <a className="text-purple-600" href="./projects">Projects</a>
                 <a className="text-purple-600" href="./resume">Resume</a>
+            </div>
+            <div className={(menuOpen ? "flex" : "hidden") + " absolute left-0 top-0 h-screen w-screen z-10 md:hidden"}>
+                <div className="flex flex-col w-1/2 bg-white p-8">
+                    <a className="mt-2 text-purple-600" href="./about">About</a>
+                    <a className="mt-2 text-purple-600" href="./blog">Blog</a>
+                    <a className="mt-2 text-purple-600" href="./projects">Projects</a>
+                    <a className="mt-2 text-purple-600" href="./resume">Resume</a>
+                </div>
+                <div onClick={($event) => { changeMenu() }} className="w-1/2 bg-black opacity-60"></div>
             </div>
         </header>
     )
