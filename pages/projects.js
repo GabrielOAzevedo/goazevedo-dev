@@ -5,7 +5,7 @@ export default function ProjectsPage(props) {
         <Layout>
             <div className="h-3/4 flex flex-col justify-center">
                 <div>
-                    <a href="https://inspector.goazevedo.dev/">
+                    <a target="_blank" href="https://inspector.goazevedo.dev/">
                         <span className="text-purple-600 underline">React Component Inspector</span>
                     </a>
                     &nbsp;-&nbsp;
