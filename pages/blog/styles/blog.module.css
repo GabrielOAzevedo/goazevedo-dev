@@ -1,0 +1,15 @@
+.blogtitle {
+  text-decoration: underline;
+  text-decoration-color: rgb(124, 58, 237);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+}
+
+.blogtitle:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(124, 58, 237);
+}
+
+.description {
+  color: #445566;
+}
