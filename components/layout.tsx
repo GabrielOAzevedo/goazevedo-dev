@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { SITE_TITLE } from "../constants/constants";
 import MyHeader from "./header";
+import styles from "./layout.module.css";
 
 const name = "Gabriel Azevedo";
 
@@ -20,7 +21,11 @@ export default function Layout({ children }: ILayoutProps) {
         />
         <title>{SITE_TITLE}</title>
       </Head>
-      <main className="h-screen flex flex-col ml-8 mr-8 mt-8 mb-8 md:ml-20 md:mr-20">
+      <main
+        className={
+          "flex flex-col ml-8 mr-8 mb-8 md:ml-20 md:mr-20"
+        }
+      >
         <MyHeader></MyHeader>
         {children}
       </main>

@@ -10,7 +10,7 @@ export default function MyHeader(props) {
   }
 
   return (
-    <header className="flex flex-row w-full md:justify-between items-center">
+    <header className="flex flex-row w-full md:justify-between items-center mt-8 mb-8">
       <div
         className="md:hidden flex items-end mr-8"
         onClick={($event) => {

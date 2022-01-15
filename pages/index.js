@@ -4,7 +4,10 @@ import Layout from "../components/layout";
 export default function Home() {
   return (
     <Layout home>
-      <section className="flex flex-col h-3/4 justify-center">
+      <section
+        className="flex flex-col h-3/4 justify-center"
+        style={{ marginTop: "25vh" }}
+      >
         <div className="ml-2">
           <p>Hi! I am</p>
           <h1 className="text-purple-600 underline text-xl">
